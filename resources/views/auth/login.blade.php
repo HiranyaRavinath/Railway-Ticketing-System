@@ -27,7 +27,7 @@
                                                 <p class="text-danger"><small>{{ $message }}</small></p>
                                             @enderror
                                             <div class="form-group">
-                                                <input type="password"
+                                                <input type="password" placeholder="Password"
                                                     class="form-control form-control-user @error('password') is-invalid @enderror"
                                                     name="password" required autocomplete="current-password">
                                             </div>
@@ -48,10 +48,10 @@
                                         </form>
                                         <hr>
                                         <div class="text-center">
-                                            <a class="small" href="forgot-password.html">Forgot Password?</a>
+                                            <a class="small" href="/password/reset">Forgot Password?</a>
                                         </div>
                                         <div class="text-center">
-                                            <a class="small" href="register.html">Create an Account!</a>
+                                            <a class="small" href="/register">Create an Account !</a>
                                         </div>
                                     </div>
                                 </div>

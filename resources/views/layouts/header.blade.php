@@ -6,7 +6,7 @@
     <meta name="description" content="Railway System">
     <meta name="author" content="Pasindu Priyashan By ARIES.LK">
 
-    <title>{{ env('APP_NAME') }}</title>
+    <title>{{ isset($title) ? $title : env('APP_NAME') }}</title>
 
     <link rel="icon" type="image/x-icon" href="{{ asset('assets/img/favicon.png') }}">
 
@@ -16,5 +16,7 @@
         rel="stylesheet">
 
     <link href="{{ asset('assets/css/sb-admin-2.min.css') }}" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/jquery-confirm/3.3.2/jquery-confirm.min.css">
+    <meta name="csrf-token" content="{{ csrf_token() }}" />
 
 </head>
